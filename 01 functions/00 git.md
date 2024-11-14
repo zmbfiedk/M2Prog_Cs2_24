@@ -25,9 +25,11 @@ Maak in je github een nieuwe repository aan:
 
 - commit de nieuwe file
 
-## SImulize
+## Simulize
 
 - Lever je gitlink METEEN in de opdracht
+    > ![](img/simulize.PNG)
+
 ## commit
 
 `commit` & `push` naar je git!
