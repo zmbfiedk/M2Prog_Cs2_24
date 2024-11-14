@@ -24,7 +24,7 @@
 ## Eigen file
 
 - voeg nu zelf nog een tekst file toe
-    - kies een text van een nieuws artiekelen van nos.nl en zet die daarin
+    - kies een text van een nieuws artiekelen van https://nos.nl en zet die daarin
         - lees die file en zet dat op het scherm
 
 
