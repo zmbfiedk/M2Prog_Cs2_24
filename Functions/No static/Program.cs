@@ -8,8 +8,10 @@ namespace Functions
         {
             "What 1997 N64 video game features James Bond and is named after the 1995 film?",
             "What arcade game was called Puckman in Japan?",
-            "how old are you",
-            "how much sleep do you get?"
+            "how old are you?",
+            "how much sleep do you get?",
+            "How long do you think you'd survive in a zombie apocalypse?",
+            "What secret conspiracy would you like to actually start letting other people know?"
         };
 
         static void Main(string[] args)
