@@ -8,8 +8,8 @@ namespace Rijschool
 {
     internal class TheorieTest
     {
-        internal int aantalfouten;
-        internal bool gehaald;
-        internal DateTime afnamedate;
+        internal int AantalFouten;
+        internal bool Gehaald;
+        internal DateTime AfnameDate;
     }
 }

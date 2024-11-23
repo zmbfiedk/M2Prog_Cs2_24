@@ -2,10 +2,10 @@
 {
     internal class Auto
     {
-        internal bool automaat;
-        internal string merk;
-        internal string kenteken;
-        internal string kilometerstand;
+        internal bool Automaat;
+        internal string Merk;
+        internal string Kenteken;
+        internal int Kilometerstand;
     }
    
 

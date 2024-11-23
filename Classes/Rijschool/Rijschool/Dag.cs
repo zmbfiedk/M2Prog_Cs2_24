@@ -8,7 +8,8 @@ namespace Rijschool
 {
     internal class Dag
     {
-        internal DateTime datum;
-        internal LesUur[] lesuren;
+        internal DateTime Datum;
+        internal LesUur[] LesUren;
+        public List<LesUur> lesUren { get; set; } = new List<LesUur>();
     }
 }

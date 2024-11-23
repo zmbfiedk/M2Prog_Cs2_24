@@ -2,9 +2,9 @@
 {
     internal class Rijleraar
     {
-        internal string naam;
-        internal int leeftijd;
-        internal bool zzp;
+        internal string Naam;
+        internal int Leeftijd;
+        internal bool Zzp;
     }
    
 

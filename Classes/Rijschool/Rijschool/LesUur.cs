@@ -8,9 +8,9 @@ namespace Rijschool
 {
     internal class LesUur
     {
-        internal int tijd;
-        internal Student student;
-        internal Rijleraar rijleraar;
-        internal Auto auto;
+        internal int Tijd;
+        internal Student Student;
+        internal Rijleraar Rijleraar;
+        internal Auto Auto;
     }
 }
