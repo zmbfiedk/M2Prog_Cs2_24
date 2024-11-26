@@ -2,6 +2,7 @@
 
 namespace Rijschool
 {
+
     internal class Program
     {
         static void Main(string[] args)
@@ -45,11 +46,10 @@ namespace Rijschool
             };
 
             Dag dag1 = new Dag();
-            
 
             Student student2 = new Student()
             {
-                Naam = "Arthur",
+                Naam = "Leslie",
                 Lespakket = new LesPakket { UrenGekocht = 500, UrenVerbruikt = 250, ExamenPogingen = 5, Automaat = false },
                 TheorieTest = new TheorieTest { AantalFouten = 5, AfnameDate = DateTime.Now.AddDays(-2), Gehaald = true },
                 RijTest = new RijTest { Gehaald = false, AfnameDatum = DateTime.Now.AddDays(-2) }
@@ -60,7 +60,7 @@ namespace Rijschool
                 Auto = auto2,
                 Rijleraar = rijleraar
             };
-            
+            dag1.LesUren = new LesUur[] { lesUur,lesUur2};
 
 
             Console.WriteLine("Dag ingepland met lesuren:");

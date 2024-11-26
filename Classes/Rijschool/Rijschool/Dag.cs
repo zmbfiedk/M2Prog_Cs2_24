@@ -10,6 +10,6 @@ namespace Rijschool
     {
         internal DateTime Datum;
         internal LesUur[] LesUren;
-        public List<LesUur> lesUren { get; set; } = new List<LesUur>();
     }
+    
 }
