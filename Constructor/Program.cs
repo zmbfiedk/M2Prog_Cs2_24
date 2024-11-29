@@ -14,6 +14,7 @@
         internal void Run()
         {
             QuizVraag quizVraag = new QuizVraag("hier komt de vraag", "hier komt de antwoord");
+            Quiz quiz = new Quiz(10);
         }
     }
 }

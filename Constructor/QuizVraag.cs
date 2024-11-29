@@ -9,6 +9,7 @@ namespace Constructor
     internal class QuizVraag
 
     {
+        internal bool goed;
         internal string vraag;
         internal string antwoord;
 
@@ -19,5 +20,10 @@ namespace Constructor
             this.vraag = vraag;
             this.antwoord = antwoord;
         }
+
+        internal QuizVraag() 
+        {
+
+        }    
     }
 }
