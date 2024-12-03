@@ -1,4 +1,6 @@
-﻿namespace Lists
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Lists
 {
     internal class Program
     {
@@ -34,10 +36,26 @@
                 characterList.Add(character);
             }
 
-            Console.WriteLine("Character List:");
+            List<double> reviews = new List<double>() { 9.99, 4.68, 342.97, 12.2 };
+
+            reviews.Remove(342.97);
+
+            Console.WriteLine("Removing the second item from characterList...");
+            characterList.RemoveAt(1);
+
+            Console.WriteLine("Removing the second item from reviews...");
+            reviews.RemoveAt(1);
+
+            Console.WriteLine("\nCharacter List:");
             foreach (string character in characterList)
             {
                 Console.WriteLine(character);
+            }
+
+            Console.WriteLine("\nReviews:");
+            foreach (double review in reviews)
+            {
+                Console.WriteLine(review);
             }
         }
     }
