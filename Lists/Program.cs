@@ -40,6 +40,32 @@ namespace Lists
 
             reviews.Remove(342.97);
 
+            List<Pickup> pickups = new List<Pickup>();
+
+            for (int i = 0; i < 10; i++)
+            {
+                Pickup pickup = new Pickup()
+                {
+                    x = i,
+                    y = 0
+                };
+                pickups.Add(pickup);
+            }
+
+            for (int i = pickups.Count - 1; i >= 0; i--)
+            {
+                if (pickups[i].x == 4)
+                {
+                    pickups.RemoveAt(i);
+                }
+            }
+
+            Console.WriteLine("Remaining Pickups:");
+            foreach (Pickup pickup in pickups)
+            {
+                Console.WriteLine($"Pickup - x: {pickup.x}, y: {pickup.y}");
+            }
+
             Console.WriteLine("Removing the second item from characterList...");
             characterList.RemoveAt(1);
 
