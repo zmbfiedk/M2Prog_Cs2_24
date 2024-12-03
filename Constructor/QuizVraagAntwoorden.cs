@@ -14,10 +14,7 @@ namespace Constructor
         internal QuizVraagAntwoorden(QuizVraag vraag)
         {
             this.vraag = vraag;
-            goed = false;  
+            goed = false;
         }
-
     }
-
-
 }

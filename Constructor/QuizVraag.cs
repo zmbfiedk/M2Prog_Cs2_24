@@ -7,23 +7,15 @@ using System.Threading.Tasks;
 namespace Constructor
 {
     internal class QuizVraag
-
     {
-        internal bool goed;
         internal string vraag;
         internal string antwoord;
-
-
 
         internal QuizVraag(string vraag, string antwoord)
         {
             this.vraag = vraag;
             this.antwoord = antwoord;
         }
-
-        internal QuizVraag() 
-        {
-
-        }    
     }
 }
+
