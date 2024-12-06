@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Lists
 {
@@ -60,6 +61,43 @@ namespace Lists
                 }
             }
 
+            List<mob> mobs = new List<mob>();
+            mobs.Add(new mob(10));
+            mobs.Add(new mob(10));
+            mobs.Add(new mob(10));
+
+
+            Random rand = new Random();
+            for (int i = 0; i <= 100; i++)
+            {
+                System.Console.WriteLine(i);
+
+
+                foreach (var mob in mobs)
+                {
+                    int randomValue = rand.Next(0, 100);
+                    if (randomValue < 30)
+                    {
+                        mob.TakeDamage(1);
+                        System.Console.WriteLine($"Mob heeft 1 schade ontvangen. Nieuwe HP: {mob.hp}");
+                    }
+
+                }
+                List<mob> defeated = mobs.Where(mob => mob.isdead).ToList();
+                foreach (var deadMob in defeated)
+                {
+                    Console.WriteLine($"Mob met HP: {deadMob.hp} is dood.");
+                }
+                mobs.RemoveAll(mob => mob.isdead);
+                if (mobs.Count == 0)
+                {
+                    break;
+                }
+            }
+
+
+
+
             Console.WriteLine("Remaining Pickups:");
             foreach (Pickup pickup in pickups)
             {
@@ -83,8 +121,7 @@ namespace Lists
             {
                 Console.WriteLine(review);
             }
-
-
         }
     }
 }
+
