@@ -11,7 +11,9 @@ namespace Functions
             "how old are you?",
             "how much sleep do you get?",
             "How long do you think you'd survive in a zombie apocalypse?",
-            "What secret conspiracy would you like to actually start letting other people know?"
+            "What secret conspiracy would you like to actually start letting other people know?",
+            "In July 2023, video game company EA announced that players will be able to explore Wakanda in an upcoming open-world video game based on the adventures of what Marvel superhero?\r\n",
+            "Which spooky 2001 GameCube game starring Mario’s brother got a reboot for Nintendo Switch in 2019?"
         };
 
         static void Main(string[] args)
